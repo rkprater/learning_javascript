@@ -1,7 +1,8 @@
-var greeting = 'Howdy ';
-var name = 'Molly';
+var scope = "global";
 
-var welcomeMessage = greeting + name + '!';
+function checkscope() {
+	var scope = 'local';
+	document.write(scope);
+}
 
-var el = document.getElementById('greeting');
-el.textContent = welcomeMessage;
+checkscope();
