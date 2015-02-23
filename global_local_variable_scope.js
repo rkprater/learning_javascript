@@ -27,7 +27,7 @@ Function parameters - also count as local variables and are defined only within 
 scope = 'global';  // Declared a global variable
 
 function checkscope() {
-	var scope = 'Hello Pilgrim!';  // Didn't declare local variable, just changed global variable value.
+	scope = 'local';  // Didn't declare local variable, just changed global variable value.
 	document.write(scope);
 	myscope = 'local';  // Implicitly declares a new global variable
 	document.write(myscope);
