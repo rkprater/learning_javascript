@@ -84,6 +84,6 @@ Avoiding this problem is simple:  declare all variables with var!
 
 // Undefined versus Unassigned
 
-var x; // Declare an unassigned varaible.  Its value is undefined
+var x; // Declare an unassigned variable.  Its value is undefined
 alert(u); // Using an undeclared variable causes an error
 u = 3; // Assigning a value to an undeclared variable creates the variable, global variable.
