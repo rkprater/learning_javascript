@@ -42,3 +42,41 @@ You can get away with not using var keyword when declaring global variables, but
 always use var to declare local variables
 
 */
+
+var scope = 'global variable scope';  // Declared the var scope, this is global.
+
+function checkscope() {
+	var scope = 'local variable scope';  // Declared a local variable on scope
+	document.write(scope);
+	function nested() {
+		var scope = 'nested local variable' // Nested function with local variable
+		document.write(scope);
+	}
+	nested();  // Prints "nested local variable"
+}
+checkscope(); // Prints "local variable scope"
+
+/*
+
+Functions do not know what variables are defined in the global scope or what they are being used for.
+
+var scope = 'global variable scope';  // Declared the var scope, this is global.
+
+function checkscope() {
+	var scope;  // Declared a local variable on scope
+	document.write(scope);
+	function nested() {
+		var scope = 'nested local variable' // Nested function with local variable
+		document.write(scope);
+	}
+	nested();  // Prints "nested local variable"
+}
+checkscope(); // Prints "undefined"
+
+
+If a function uses a global variable instead of a local one, it runs the risk of changing a value on which some 
+part of the program relies.
+
+Avoiding this problem is simple:  declare all variables with var!
+
+*/
