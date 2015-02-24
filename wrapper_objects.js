@@ -11,6 +11,9 @@ var t = s.len;	// Now query the propery
 JS objects are composite values: they are a collection of properties 
 or named values.
 
+We refer to the value of a property using . notation.  When the value of a 
+property is a function, we call it a method.  
+
 */
 
 /*
