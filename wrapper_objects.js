@@ -2,12 +2,16 @@ var s = "hello world!"  // A String
 
 var world = s.substring(s.indexOf(" ")+1, s.length); // Use string properties
 
-
-
-
 var s = "test"; // Start with string value
 s.len = 4;			// Set a property on it
 var t = s.len;	// Now query the propery
+
+/*
+
+JS objects are composite values: they are a collection of properties 
+or named values.
+
+*/
 
 /*
 
